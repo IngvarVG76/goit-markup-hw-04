@@ -1,0 +1,417 @@
+:root {
+  --primary-brand-color: #4d5ae5;
+  --pressed-state-color: #404bbf;
+  --dakr-overlays-headings: #2e2f42;
+  --body-text-color: #434455;
+  --subtle-text-color: #8e8f99;
+  --accent-background-color: #e7e9fc;
+  --light-bacground-color: #f4f4fd;
+  --primary-background-color: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+button {
+  cursor: pointer;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* ========================================== Body ==========================================  */
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--body-text-color);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/*========================================== Header ==========================================*/
+.header {
+  background-color: var(--primary-background-color);
+  border-bottom: 1px solid var(--accent-background-color);
+}
+
+.header-nav-conteiner {
+  display: flex;
+  align-items: center;
+}
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-logo {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: calc(24 / 18);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--dakr-overlays-headings);
+  margin-right: 78px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-logo > span {
+  color: var(--primary-brand-color);
+}
+
+.header-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--dakr-overlays-headings);
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--pressed-state-color);
+}
+
+.header-contacts {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: auto;
+}
+
+.header-contact-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--body-text-color);
+  text-decoration: none;
+}
+
+.header-contact-link:hover,
+.header-contact-link:focus {
+  color: var(--pressed-state-color);
+}
+
+/* =====================Section 1 Effective Solutions for Your Business===================== */
+
+.solutions {
+  background-color: var(--dakr-overlays-headings);
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
+.solution-container {
+  text-align: center;
+}
+
+.solutions-title {
+  margin: 0 auto;
+  margin-bottom: 48px;
+  max-width: 496px;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--primary-background-color);
+}
+
+.solution-btn {
+  display: inline-block;
+  margin: 0 auto;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.04em;
+  color: var(--primary-background-color);
+  background-color: var(--primary-brand-color);
+
+  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+}
+
+.solution-btn:focus,
+.solution-btn:hover {
+  background-color: var(--pressed-state-color);
+}
+
+/*================================ Secrtion 2 Main principles ================================*/
+
+.priciples {
+  padding-top: 120px;
+  padding-bottom: 60px;
+  background-color: var(--primary-background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.principles-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dakr-overlays-headings);
+  margin-bottom: 8px;
+}
+
+.principles-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  width: 264px;
+}
+
+/*=============================== Section 3 What are we doing ===============================*/
+
+.what {
+  padding-top: 60px;
+  padding-bottom: 120px;
+  background-color: var(--primary-background-color);
+}
+
+.what-title {
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--dakr-overlays-headings);
+}
+
+.what-list {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 24px;
+}
+
+.what-item {
+  width: 360px;
+  border: 1px solid var(--accent-background-color);
+}
+
+/*==================================== Section 4 Our Team ====================================*/
+
+.team {
+  background-color: var(--light-bacground-color);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.team-container {
+}
+
+.team-head {
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--dakr-overlays-headings);
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-item {
+  width: 264px;
+  background-color: var(--primary-background-color);
+  padding-bottom: 32px;
+  border-radius: 0px 0px 4px 4px;
+}
+.team-list-wrap {
+}
+
+.team-name {
+  margin-top: 32px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--dakr-overlays-headings);
+}
+
+.team-position {
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--body-text-color);
+}
+
+/*====================================== Footer section ======================================*/
+
+.footer {
+  color: var(--accent-background-color);
+  background-color: var(--dakr-overlays-headings);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-container {
+}
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: calc(24 / 18);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.footer-logo > span {
+  color: var(--primary-brand-color);
+}
+
+.footer-text {
+  margin-top: 16px;
+  max-width: 264px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/*====================================== Potrfolio.html ======================================*/
+
+.solutions-portfolio {
+  background-color: var(--primary-background-color);
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+/*===================================== Section 1 Filters =====================================*/
+
+.solutions-filter-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+.solutions-filter-btn {
+  
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--primary-brand-color);
+  background-color: var(--light-bacground-color);
+
+  padding: 12px 24px;
+
+  border: 1px solid var(--accent-background-color);
+  border-radius: 4px;
+}
+
+.solutions-filter-btn:hover,
+.solutions-filter-btn:focus {
+  color: var(--primary-background-color);
+  background-color: var(--pressed-state-color);
+  border: 1px solid var(--pressed-state-color);
+}
+
+/*===================================== Subsection 1 cards =====================================*/
+
+.solutions-result {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  background-color: var(--primary-background-color);
+}
+
+.solution-result-item {
+  width: 360px;
+}
+
+.solution-item-wrap {
+  padding: 32px 16px;
+  border: 1px solid var(--accent-background-color);
+  border-top: none;
+  background-color: var(--primary-background-color);
+}
+.solution-result-title {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dakr-overlays-headings);
+}
+
+.solution-result-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--body-text-color);
+}

@@ -147,12 +147,22 @@ body {
 /* =====================Section 1 Effective Solutions for Your Business===================== */
 
 .solutions {
-  background-color: var(--dakr-overlays-headings);
-  padding-top: 188px;
-  padding-bottom: 188px;
 }
 
 .solution-container {
+  margin: 0 auto;
+  max-width: 1440px;
+  height: 600px;
+  background-color: var(--dakr-overlays-headings);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
   text-align: center;
 }
 
@@ -177,6 +187,7 @@ body {
   letter-spacing: 0.04em;
   color: var(--primary-background-color);
   background-color: var(--primary-brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   padding: 16px 32px;
   min-width: 169px;
@@ -192,7 +203,7 @@ body {
 
 /*================================ Secrtion 2 Main principles ================================*/
 
-.priciples {
+.principles-list {
   padding-top: 120px;
   padding-bottom: 60px;
   background-color: var(--primary-background-color);
@@ -200,8 +211,13 @@ body {
   justify-content: center;
   align-items: center;
   gap: 24px;
+  /* max-width: 1128px; */
 }
 
+.principles-item {
+  max-width: 264px;
+  /* flex-basis: calc((100% - 24px) / 4); */
+}
 .principles-title {
   font-weight: 500;
   font-size: 20px;
@@ -217,6 +233,15 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   width: 264px;
+}
+
+.principles-icons {
+  padding: 24px 100px;
+  background: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  width: 264px;
+  height: 112px;
 }
 
 /*=============================== Section 3 What are we doing ===============================*/
@@ -282,6 +307,8 @@ body {
   background-color: var(--primary-background-color);
   padding-bottom: 32px;
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .team-list-wrap {
 }
@@ -298,6 +325,7 @@ body {
 
 .team-position {
   margin-top: 8px;
+  margin-bottom: 8px;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
@@ -305,6 +333,92 @@ body {
   color: var(--body-text-color);
 }
 
+.team-social-icon {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-content: center;
+}
+
+.social-icon-list {
+  width: 40px;
+  height: 40px;
+}
+
+.social-icon-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--primary-brand-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon-link:hover,
+.social-icon-link:focus {
+  background: var(--pressed-state-color);
+}
+
+.social-icon {
+  fill: var(--primary-background-color);
+}
+
+/*====================================== Customers section ======================================*/
+
+.customers {
+  background-color: var(--primary-background-color);
+}
+.customers-container {
+  padding-top: 130px;
+  padding-bottom: 120px;
+  text-align: center;
+}
+
+.customers-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--dakr-overlays-headings);
+  margin-bottom: 72px;
+}
+
+.customer-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.customer-item {
+}
+.customer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+  border: 1px solid var(--subtle-text-color);
+  border-radius: 4px;
+}
+
+.customer-icon {
+  fill: var(--subtle-text-color);
+}
+
+.customer-link:hover,
+.customer-link:focus {
+  border: 1px solid #404bbf;
+  fill: #404bbf;
+}
+
+.customer-icon:hover,
+.customer-icon:focus {
+  fill: var(--pressed-state-color);
+}
 /*====================================== Footer section ======================================*/
 
 .footer {
@@ -315,6 +429,7 @@ body {
 }
 
 .footer-container {
+  display: flex;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -339,6 +454,47 @@ body {
   letter-spacing: 0.02em;
 }
 
+.social-media {
+  margin-left: 120px;
+}
+.social-media-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-background-color);
+  margin-bottom: 16px;
+}
+
+.social-media-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-media-item {
+}
+.social-media-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.social-media-link:hover,
+.social-media-link:focus {
+  background: #31d0aa;
+}
+
+.social-media-icon {
+  fill: var(--primary-background-color);
+}
+
 /*====================================== Potrfolio.html ======================================*/
 
 .solutions-portfolio {
@@ -358,7 +514,6 @@ body {
 }
 
 .solutions-filter-btn {
-  
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
@@ -378,6 +533,8 @@ body {
   color: var(--primary-background-color);
   background-color: var(--pressed-state-color);
   border: 1px solid var(--pressed-state-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*===================================== Subsection 1 cards =====================================*/
@@ -391,6 +548,10 @@ body {
 
 .solution-result-item {
   width: 360px;
+}
+
+.solution-result-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .solution-item-wrap {

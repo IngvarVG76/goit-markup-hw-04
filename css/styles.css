@@ -81,16 +81,6 @@ body {
   border-bottom: 1px solid var(--accent-background-color);
 }
 
-.header-nav-conteiner {
-  display: flex;
-  align-items: center;
-}
-.header-list {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
 .header-logo {
   display: block;
   font-family: "Raleway", sans-serif;
@@ -103,19 +93,37 @@ body {
   color: var(--dakr-overlays-headings);
   margin-right: 78px;
   padding-top: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 28px;
 }
 
 .header-logo > span {
   color: var(--primary-brand-color);
 }
 
+.header-nav-conteiner {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  
+  gap: 40px;
+}
+
+.header-item {
+  
+}
+
 .header-link {
+  
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--dakr-overlays-headings);
+  padding-top: 24px;
+  padding-bottom: 28px;
 }
 
 .header-link:hover,
@@ -137,6 +145,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--body-text-color);
   text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 28px;
 }
 
 .header-contact-link:hover,
@@ -409,14 +419,14 @@ body {
   fill: var(--subtle-text-color);
 }
 
-.customer-link:hover,
-.customer-link:focus {
+.customer-item:hover .customer-link,
+.customer-item:focus .customer-link {
   border: 1px solid #404bbf;
   fill: #404bbf;
 }
 
-.customer-icon:hover,
-.customer-icon:focus {
+.customer-item:hover .customer-icon,
+.customer-item:focus .customer-icon {
   fill: var(--pressed-state-color);
 }
 /*====================================== Footer section ======================================*/
